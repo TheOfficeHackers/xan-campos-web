@@ -1,0 +1,27 @@
+.colabo-card {
+  background-color: rgba(214, 118, 115, 0.5);
+  border-radius: 0.3rem;
+  width: 45rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .colabo-card {
+    width: 25rem;
+  }
+}
+
+.colabo-input-name {
+  background-color: rgba(2,2,2,0.4);
+  border: none;
+  color: white;
+  font-family: 'Zen Dots', cursive;
+  width: 10rem;
+}
+
+.form-input-icon {
+  background-color: white;
+}
+
+.form-button {
+  font-family: 'Zen Dots', cursive;
+}

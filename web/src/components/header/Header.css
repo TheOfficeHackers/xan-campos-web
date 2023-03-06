@@ -1,0 +1,43 @@
+.header-text {
+  font-family: 'Zen Dots', cursive;
+}
+
+p {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+ 
+}
+
+p:hover {
+  color: rgba(8, 8, 8, 0.712) ;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: rgba(8, 8, 8, 0.712) !important;
+  transition: 0.5s;
+  font-weight: bolder !important;
+} 
+
+.bgcolor {
+  background-color: rgb(168, 44, 44)}
+
+.offcanvas {
+  transition: 1s !important;
+}
+.header-title {
+  color: rgb(168, 44, 44)
+}
+
+.social {
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.social:hover {
+  font-weight: bolder;
+}
+
