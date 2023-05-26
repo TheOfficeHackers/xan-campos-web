@@ -10,7 +10,7 @@ require("./config/db.config");
 const app = express();
 
 app.use((req, res, next) => {
-  res.set("Access-Control-Allow-Origin", "*");
+  res.set("Access-Control-Allow-Origin", "https://lechuza7-xancampos-web.netlify.app");
   res.set("Access-Control-Allow-Headers", "content-type");
   res.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   res.set("Access-Control-Allow-Credentials", "true");
