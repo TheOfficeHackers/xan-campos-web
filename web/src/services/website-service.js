@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const http = axios.create({
-  baseURL: "http://localhost:3001/api/v1",
+  baseURL: "https://xan-campos-web-api.onrender.com",
   withCredentials: true,
 });
 
