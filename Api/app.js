@@ -28,7 +28,7 @@ app.use(loadUser);
 const routes = require("./config/routes.config")
 app.use('/api/v1', routes)
 
-app.use((req, res, next) => next(createError(404, "Page not found")));
+// app.use((req, res, next) => next(createError(404, "Page not found")));
 
 app.use((error, req, res, next) => {
   const data = {};
