@@ -18,6 +18,8 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(express.static(`${__dirname}/react-app`))
+
 app.use(express.json());
 app.use(logger('dev'));
 
