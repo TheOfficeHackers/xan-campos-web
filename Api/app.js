@@ -31,10 +31,6 @@ app.use(loadUser);
 const routes = require("./config/routes.config")
 app.use('/api/v1', routes)
 
-app.get('/*', (req, res) => {
-  res.sendFile(`${__dirname}/react-app/index.html`)
-})
-
 // app.use((req, res, next) => next(createError(404, "Page not found")));
 
 app.use((error, req, res, next) => {
