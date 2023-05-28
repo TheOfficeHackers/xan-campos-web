@@ -15,7 +15,7 @@ app.use((req, res, next) => {
   res.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   res.set("Access-Control-Allow-Credentials", "true");
   res.set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization");
-  res.set("Content-Security-Policy", "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; frame-src 'self'")
+  res.set("Content-Security-Policy", "font-src ''mongodb+srv://MariaLalin:JH6ZawffiMihNTPB@cluster0.2hcmmzt.mongodb.net/xancamposwebsite?retryWrites=true&w=majority''")
   next();
 });
 
