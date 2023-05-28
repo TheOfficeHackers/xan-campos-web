@@ -15,14 +15,9 @@ app.use((req, res, next) => {
   res.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   res.set("Access-Control-Allow-Credentials", "true");
   res.set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization");
-  next();
-});
-
-app.use(function (req, res, next) {
   res.setHeader(
     'Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self' data; img-src 'self'; frame-src 'self'"
   );
-  
   next();
 });
 
