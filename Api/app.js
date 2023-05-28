@@ -4,7 +4,6 @@ const createError = require('http-errors')
 const express = require("express");
 const logger = require("morgan")
 const mongoose = require("mongoose");
-const cors = require("./config/cors.config");
 
 require("./config/db.config");
 
@@ -22,7 +21,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(cors);
 app.use(express.json());
 app.use(logger('dev'));
 
