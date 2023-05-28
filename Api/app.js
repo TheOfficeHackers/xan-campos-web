@@ -16,7 +16,7 @@ app.use((req, res, next) => {
   res.set("Access-Control-Allow-Credentials", "true");
   res.set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization");
   res.setHeader(
-    'Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; font-src *:; img-src 'self'; frame-src 'self'"
+    'Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; font-src data:; img-src 'self'; frame-src 'self'"
   );
   next();
 });
