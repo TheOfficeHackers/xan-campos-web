@@ -15,7 +15,7 @@ app.use((req, res, next) => {
   res.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   res.set("Access-Control-Allow-Credentials", "true");
   res.set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization");
- res.set("Content-Security-Policy", "default-src 'none'; font-src 'self' data:;");
+ res.set("Content-Security-Policy", "default-src 'none'; font-src 'self' https://lechuza7-xancampos-web.netlify.app/ data:;");
   next();
 });
 
