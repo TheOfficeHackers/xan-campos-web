@@ -10,10 +10,12 @@ require("./config/db.config");
 const app = express();
 
 app.use((req, res, next) => {
-  res.set("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.set("Access-Control-Allow-Origin", "https://lechuza7-xancampos-web.netlify.app");
   res.set("Access-Control-Allow-Headers", "content-type");
   res.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   res.set("Access-Control-Allow-Credentials", "true");
+  res.set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization");
+ res.set("Content-Security-Policy", "default-src 'none'; font-src 'self' https://fonts.googleapis.com data:;");
   next();
 });
 
@@ -27,7 +29,7 @@ app.use(loadUser);
 const routes = require("./config/routes.config")
 app.use('/api/v1', routes)
 
-app.use((req, res, next) => next(createError(404, "Page not found")));
+// app.use((req, res, next) => next(createError(404, "Page not found")));
 
 app.use((error, req, res, next) => {
   const data = {};
