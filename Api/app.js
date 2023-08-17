@@ -10,12 +10,12 @@ require("./config/db.config");
 const app = express();
 
 app.use((req, res, next) => {
-  res.set("Access-Control-Allow-Origin", "https://lechuza7-xancampos-web.netlify.app");
+  res.set("Access-Control-Allow-Origin", "https://main--lechuza7-xancampos-web.netlify.app/");
   res.set("Access-Control-Allow-Headers", "content-type");
   res.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   res.set("Access-Control-Allow-Credentials", "true");
   res.set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization");
-  res.set("Content-Security-Policy", "default-src 'self' https://lechuza7-xancampos-web.netlify.app https://cdn.jsdelivr.net; font-src 'self' https://fonts.googleapis.com data:; style-src 'self' https://cdn.jsdelivr.net https://lechuza7-xancampos-web.netlify.app; script-src 'self' https://kit.fontawesome.com https://lechuza7-xancampos-web.netlify.app; img-src 'self' https://lechuza7-xancampos-web.netlify.app");
+  res.set("Content-Security-Policy", "default-src 'self' https://main--lechuza7-xancampos-web.netlify.app/ https://cdn.jsdelivr.net; font-src 'self' https://fonts.googleapis.com data:; style-src 'self' https://cdn.jsdelivr.net https://lechuza7-xancampos-web.netlify.app; script-src 'self' https://kit.fontawesome.com https://lechuza7-xancampos-web.netlify.app; img-src 'self' https://main--lechuza7-xancampos-web.netlify.app/");
 
   next();
 });
